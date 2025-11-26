@@ -45,7 +45,7 @@ Wenn wir einen weiteren Piraten hinzufügen muss der Kapitän (aus den gleichen 
   )
 Damit erhöht sich die Anzahl von "Bestechungsgold" $B$ alle zwei Schritte um eins. Außerdem gilt, dass falls der ranghöchste Pirat eine ungerade Nummer besitzt, dass alle Piraten mit ungerader Nummer bestochen werden (außer er selbst, für $n>2$).
 
-Sei die Anzahl der Piraten nun $1000$. Wir brauchen ab $n=3$ Bestechungsgold und erhöhen alle zwei Schritte das Bestechungsgold um eins. Also werden $1000/2 -2$ Bestechungsgold abgegeben. Damit erhält der Kapitän einen Rest von $9502$ und wir erhalten folgende Verteilung:
+Sei die Anzahl der Piraten nun $1000$. Um 500 Stimmen zu erhalten, muss er also jede zweite Person bestechen, also 499 andere Piraten. Damit bleibt ein Restgold für ihn von $9501$, wodurch die Verteilung wie folgt aussieht:
 
 #table(
   gutter: 3pt,
