@@ -12,13 +12,5 @@
 
 Sei $n=1$. Dann haben wir eine Spalte, in welcher sich alle Marker befinden. Diese Kombination funktioniert trivialerweise.
 
-Sei $n=2$. Dann gibt es folgende Möglichkeiten, wie sich die Marker verteilen können (wobei r=rot, b=blau, w=weiß):
-
-#table(
-  gutter: 5pt,
-  columns: (auto,auto),
-  [w],[w],
-  [b],[b],
-  [r],[r]
-)
+Da es $3n$ Zellen mit je $n$ Markern jeder Farbe gibt, können die Marker einer Sorte maximal eine ganze Zeile füllen oder sich auf die Zeilen verteilen.
 
