@@ -53,5 +53,5 @@ Sei die Anzahl der Piraten nun $1000$. Wir brauchen ab $n=3$ Bestechungsgold und
   stroke: none,
   align: center,
   [1000],[999],[998],[$dots$],[2],[1],
-  [9502],[0],[1],[$dots$],[1],[0]
+  [9501],[0],[1],[$dots$],[1],[0]
 )
