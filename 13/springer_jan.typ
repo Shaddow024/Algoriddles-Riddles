@@ -11,17 +11,14 @@
   title: "13.1"
 )
 
-Zu Beginn haben wir $n$ spielende Menschen. In jeder Runde halbiert sich die Anzahl an Menschen, außer wir haben eine ungerade Anzahl Spieler, dann bleibt einer zusätzlich übrig.
+Idee: Da wir in diesem Spiel limitiert sind durch unsere Auswahl von Zügen (niemals zwei nach oben oder links), werden wir uns mit jedem Schritt weiter nach unten rechts bewegen. Wir wählen die Summe der Koordinaten als Potentialfunktion:
 
-Also ergibt sich die folgende Rekursionsgleichung:
-$ T(0) = n #h(10pt) ("Anfangsbestand") $
-$ T(i+1) = ceil(T(i)/2) #h(10pt) ("Bestand nach dem "i+1"-ten Schritt") $
+$ Phi(x,y) = x+y $
 
-Die Anzahl der benötigten Runden ist das kleinste $k$, für das folgendes gilt:
-$ ceil(n/2^k) = 1 $
-Das ist äquivalent zu:
-$ 2^k >= n $
-Mit Logarithmus umformen:
-$ k = ceil(log_2 n) $
+Betrachtet man nun alle legalen Spielzüge (ohne Doppelungen) und deren Auswirkung auf die Potentialfunktion, so ergibt sich folgendes:
++ $Delta x = 2, Delta y = 1 -> Delta Phi = 3$
++ $Delta x = 2, Delta y = -1 -> Delta Phi = 1$
++ $Delta x = 1, Delta y = 2 -> Delta Phi = 3$
++ $Delta x = -1, Delta y = 2 -> Delta Phi = 1$
 
-Die Anzahl der Runden bis zum Weltmeister sind also $ceil(log_2 n)$.
+Daraus ergibt sich, dass die Potentialfunktion strikt wächst und das Spiel somit in endlichen vielen Schritten endet.
